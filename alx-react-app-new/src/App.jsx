@@ -6,7 +6,20 @@ import WelcomeMessage from './components/WelcomeMessage';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
-import UserProfile from './components/UserProfile'; // New component
+import UserProfile from './components/UserProfile';
+import Counter from "./components/Counter";
+
+
+// New component
+
+function App() {
+  return (
+    <div>
+      <h1>My Counter App</h1>
+      <Counter />
+    </div>
+  )
+}
 
 function App() {
   const [count, setCount] = useState(0);
