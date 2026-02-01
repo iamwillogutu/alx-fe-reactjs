@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import { AddRecipeForm } from './components/AddRecipeForm';
+import AddRecipeForm from './components/AddRecipeForm';
 import RecipeList from './components/RecipeList';
-import { RecipeList } from './components/RecipeList';
-import { RecipeDetails } from './components/RecipeDetails';
+import RecipeDetails from './components/RecipeDetails';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
