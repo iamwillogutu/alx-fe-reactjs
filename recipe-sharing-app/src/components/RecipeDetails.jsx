@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useRecipeStore } from '../stores/recipeStore';
-import { EditRecipeForm } from './EditRecipeForm';
-import { DeleteRecipeButton } from './DeleteRecipeButton';
+import EditRecipeForm from './EditRecipeForm';
+import DeleteRecipeButton from './DeleteRecipeButton';
 
-export const RecipeDetails = () => {
+const RecipeDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const recipe = useRecipeStore((state) =>
@@ -17,7 +17,7 @@ export const RecipeDetails = () => {
     <div>
       <h1>{recipe.title}</h1>
       <p>{recipe.description}</p>
-      
+
       {/* Edit form */}
       <EditRecipeForm recipe={recipe} />
 
@@ -26,3 +26,5 @@ export const RecipeDetails = () => {
     </div>
   );
 };
+
+export default RecipeDetails;
