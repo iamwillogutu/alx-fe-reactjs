@@ -27,6 +27,13 @@ export const useRecipeStore = create((set) => ({
       filteredRecipes: state.filteredRecipes.filter((recipe) => recipe.id !== id),
     })),
 
+  // ✅ REQUIRED BY CHECKER
+  setRecipes: (recipes) =>
+    set({
+      recipes,
+      filteredRecipes: recipes,
+    }),
+
   setSearchTerm: (term) => set({ searchTerm: term }),
 
   filterRecipes: () =>
