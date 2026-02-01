@@ -3,6 +3,7 @@ import './App.css';
 import AddRecipeForm from './components/AddRecipeForm';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
+import SearchBar from './components/SearchBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,18 +13,17 @@ function App() {
         <h1>Recipe Sharing App</h1>
 
         <Routes>
-          {/* Main page: Add recipe + list */}
           <Route
             path="/"
             element={
               <>
+                <SearchBar />
                 <AddRecipeForm />
                 <RecipeList />
               </>
             }
           />
 
-          {/* Recipe details page */}
           <Route path="/recipe/:id" element={<RecipeDetails />} />
         </Routes>
       </div>

@@ -2,10 +2,10 @@ import React from 'react';
 import { useRecipeStore } from '../stores/recipeStore';
 import { Link } from 'react-router-dom';
 
-export const RecipeList = () => {
-  const recipes = useRecipeStore((state) => state.recipes);
+const RecipeList = () => {
+  const recipes = useRecipeStore((state) => state.filteredRecipes);
 
-  if (recipes.length === 0) return <p>No recipes added yet.</p>;
+  if (recipes.length === 0) return <p>No recipes found.</p>;
 
   return (
     <div>
@@ -20,3 +20,5 @@ export const RecipeList = () => {
     </div>
   );
 };
+
+export default RecipeList;
