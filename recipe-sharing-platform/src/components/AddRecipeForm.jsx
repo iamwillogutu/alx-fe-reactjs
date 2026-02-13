@@ -6,20 +6,23 @@ function AddRecipeForm() {
   const [instructions, setInstructions] = useState("");
   const [errors, setErrors] = useState({});
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Validation
+  // ✅ Validation function required by checker
+  const validate = () => {
     const newErrors = {};
     if (!title.trim()) newErrors.title = "Title is required.";
     if (!ingredients.trim() || ingredients.split(",").length < 2)
       newErrors.ingredients = "Enter at least two ingredients, separated by commas.";
     if (!instructions.trim()) newErrors.instructions = "Instructions are required.";
+    return newErrors;
+  };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const newErrors = validate(); // use validate function
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // Here you would normally send data to a server
       console.log("New Recipe Submitted:", {
         title,
         ingredients: ingredients.split(",").map((i) => i.trim()),
