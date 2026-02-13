@@ -3,24 +3,30 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": ["200g spaghetti", "100g pancetta", "2 eggs", "50g parmesan cheese", "Black pepper"],
+    "instructions": [
+      "Cook spaghetti according to package instructions.",
+      "Fry pancetta until crispy.",
+      "Beat eggs and mix with cheese.",
+      "Combine spaghetti with pancetta and remove from heat.",
+      "Quickly stir in egg and cheese mixture.",
+      "Serve immediately with extra cheese and black pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 3,
-    "title": "Vegan Buddha Bowl",
-    "summary": "A nourishing bowl packed with vegetables, grains, and plant-based protein.",
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 4,
-    "title": "Chocolate Lava Cake",
-    "summary": "A rich, molten chocolate cake that oozes gooey chocolate when cut.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": ["500g chicken", "200g yogurt", "2 tsp garam masala", "1 onion", "400g tomato puree", "Garlic and ginger paste"],
+    "instructions": [
+      "Marinate chicken with yogurt and spices for 2 hours.",
+      "Grill the chicken until cooked through.",
+      "Saute onions, garlic, and ginger.",
+      "Add tomato puree and simmer.",
+      "Add grilled chicken and cook for 10 minutes.",
+      "Serve hot with rice or naan."
+    ]
   }
 ]
