@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import recipeData from "../data.json";
 
+<Link
+  to="/add-recipe"
+  className="text-white bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700"
+>
+  Add New Recipe
+</Link>
+
+
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
 
