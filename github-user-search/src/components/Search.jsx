@@ -5,7 +5,7 @@ function Search() {
   const [username, setUsername] = useState('')
   const [location, setLocation] = useState('')
   const [minRepos, setMinRepos] = useState('')
-  const [users, setUsers] = useState([]) // now multiple users
+  const [users, setUsers] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
