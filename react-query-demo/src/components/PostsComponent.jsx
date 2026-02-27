@@ -21,6 +21,9 @@ const PostsComponent = () => {
     refetch,
   } = useQuery("posts", fetchPosts, {
     staleTime: 1000 * 60, // 1 minute cache freshness
+    cacheTime: 1000 * 60 * 5,    // cache stays for 5 minutes
+    refetchOnWindowFocus: false, // prevents auto refetch on tab focus
+    keepPreviousData: true,      // keeps old data while fetching new
   });
 
   if (isLoading) return <p>Loading...</p>;
