@@ -7,22 +7,22 @@ const RegistrationForm = () => {
   const [errors, setErrors] = useState({});
 
   const validate = () => {
-    const newErrors = {};
+  const newErrors = {};
 
-    if (!username.trim()) {
-      newErrors.username = "Username is required";
-    }
+  if (!username) {
+    newErrors.username = "Username is required";
+  }
 
-    if (!email.trim()) {
-      newErrors.email = "Email is required";
-    }
+  if (!email) {
+    newErrors.email = "Email is required";
+  }
 
-    if (!password.trim()) {
-      newErrors.password = "Password is required";
-    }
+  if (!password) {
+    newErrors.password = "Password is required";
+  }
 
-    return newErrors;
-  };
+  return newErrors;
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
